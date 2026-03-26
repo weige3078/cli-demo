@@ -3,9 +3,11 @@
   "version": "0.1.1",
   "description": "脚手架 demo",
   "private": false,
-  "main": "index.js",
   "bin": {
-    "mvc": "./dist/mvc.js"
+    "mvc": "./bin/mvc.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "rollup -c rollup.config.cjs",
