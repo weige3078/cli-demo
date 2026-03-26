@@ -1,7 +1,8 @@
 {
-  "name": "cli-demo",
+  "name": "@weig_3078/cli-demo",
   "version": "0.1.0",
   "description": "脚手架 demo",
+  "private": false,
   "main": "index.js",
   "bin": {
     "mvc": "./dist/mvc.js"
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/woai3c/mini-cli.git"
+    "url": "https://github.com/weige3078/cli-demo.git"
   },
   "husky": {
     "hooks": {
@@ -22,10 +23,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/woai3c/mini-cli/issues"
-  },
-  "homepage": "https://github.com/woai3c/mini-cli#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^7.0.0",
@@ -51,6 +48,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "husky": "^4.3.0",
-    "rollup": "^4.60.0"
+    "rollup": "^4.60.0",
+    "rollup-plugin-copy": "^3.5.0"
   }
 }
