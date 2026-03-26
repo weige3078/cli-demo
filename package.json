@@ -1,0 +1,56 @@
+{
+  "name": "cli-demo",
+  "version": "0.1.0",
+  "description": "脚手架 demo",
+  "main": "index.js",
+  "bin": {
+    "mvc": "./dist/mvc.js"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woai3c/mini-cli.git"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "node scripts/verify-commit.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woai3c/mini-cli/issues"
+  },
+  "homepage": "https://github.com/woai3c/mini-cli#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^7.0.0",
+    "download-git-repo": "^3.0.2",
+    "ejs": "^3.1.6",
+    "execa": "^5.0.0",
+    "fs-extra": "^9.1.0",
+    "globby": "^11.0.2",
+    "inquirer": "^7.3.3",
+    "isbinaryfile": "^4.0.6",
+    "javascript-stringify": "^2.0.1",
+    "js-yaml": "^4.1.0",
+    "readline": "^1.3.0",
+    "recast": "^0.20.4",
+    "vue-codemod": "0.0.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "deepmerge": "^4.3.1",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.0",
+    "rollup": "^4.60.0"
+  }
+}
