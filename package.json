@@ -1,6 +1,6 @@
 {
   "name": "@weig_3078/cli-demo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "脚手架 demo",
   "private": false,
   "main": "index.js",
