@@ -1,9 +1,11 @@
 #!/usr/bin/env node
+const path = require('path')
 const program = require('commander')
 const create = require('../lib/create')
+const { version } = require(path.join(__dirname, '../package.json'))
 
 program
-.version('0.1.0')
+.version(version)
 .command('create <name>')
 .option('--skip-install', 'skip npm install')
 .description('create a new project')
