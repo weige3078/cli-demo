@@ -4,6 +4,7 @@ const chalk = require('chalk')
 const program = require('commander')
 const create = require('../lib/create')
 const update = require('../lib/update')
+const upgrade = require('../lib/upgrade')
 const { version } = require(path.join(__dirname, '../package.json'))
 
 program
@@ -22,6 +23,18 @@ program
 .action(async (opts) => {
     try {
         await update(opts)
+    } catch (e) {
+        console.error(chalk.red(e.message || e))
+        process.exit(1)
+    }
+})
+
+program
+.command('upgrade [dir]')
+.description('upgrade project template (remote only)')
+.action(async (dir) => {
+    try {
+        await upgrade(dir)
     } catch (e) {
         console.error(chalk.red(e.message || e))
         process.exit(1)
